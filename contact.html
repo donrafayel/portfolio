@@ -38,7 +38,12 @@
           <h1>Contact Me</h1>
           <p>Here is how You Can reach me</p>
         </div>
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
           <div class="form-div">
             <input type="text" name="name" id="name" placeholder="Name" />
             <input
@@ -67,6 +72,7 @@
               id="message"
               placeholder="Enter Message"
             ></textarea>
+            <div data-netlify-recaptcha="true"></div>
 
             <button type="submit">Submit</button>
           </div>
